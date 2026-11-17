@@ -20,11 +20,13 @@
         
         padding: 0.8rem;
         padding-bottom: 0.01rem;
+        z-index: 1000;
 	}
     nav {
-        position: sticky;
-        top: 3rem;
+        position: relative;
         width: 100%;
+        
+        z-index: 1;
     }
         nav ul {
             margin: 0;
@@ -56,13 +58,18 @@
         width: 100%;
         padding: 1rem;
 
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+    }	
+    main img {
+		display: block;
+		margin-left: auto;
+        margin-right: auto;
     }	
 
 	footer {
         position: fixed;
-        bottom: 0%;
-        left 0rem;
+        bottom: 0;
+        left 0;
         width: 100%;
         
         padding-left: 0.5rem;
@@ -162,6 +169,7 @@
         padding: 0.5rem;
     }
     
+    
     nav ul {
         flex-direction: column;
     }
@@ -176,7 +184,6 @@
         text-align: center;
         font-size: 0.85rem;
     }
-
     nav > p > a {
         width: 80%;
         max-width: 12rem;
@@ -184,6 +191,7 @@
         padding-top: 0.4rem;
         padding-bottom: 0.4rem;
     }
+    
     footer img {
         width: 1.5rem;
     }
