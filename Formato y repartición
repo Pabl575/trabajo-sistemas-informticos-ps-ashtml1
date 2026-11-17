@@ -1,0 +1,51 @@
+## Reparto de páginas
+
+**Adriana**
+- `introducción.html`, antes llamado `Hoja 1.html`.
+- `comparativa.html` ?PARECE TERMINADO
+- `modems.html`
+- `switches.html`
+- `bibliografía.html` (con las fuentes al final)
+
+**Pablo**
+- `index.html` ✅TERMINADO
+- `routers.html`
+- `servidores.html`
+- `topologias.html`
+
+`index` y `bibliografía` son más ligeras que `servidores` y `topologias`, así que Adriana cubre la plantilla y Pablo, esas dos páginas más pesadas. Cada uno busca y nombra las imágenes de sus páginas, y cada uno escribe sus 4 hojas CSS, que ya es bastante trabajo extra.
+
+**En común:** acordar este documento de pautas antes de escribir, validar las páginas del otro (HTML y CSS) y repasar al final que el menú y el pie sean idénticos en las 8.
+
+## Pautas de etiquetas y clases
+
+**Archivos y rutas**
+- Nombres en minúsculas, sin tildes ni espacios, guion para separar: `img/routers-wifi.jpg`.
+- Imágenes siempre con `alt`, y rutas relativas (`css/estilos.css`, `img/...`).
+- Todos en UTF-8 con `<meta charset="utf-8">`, `lang="es"` y el `viewport`.
+
+**Esqueleto de cada página (igual en las 8)**
+```
+<header> h1 + <nav class="menu-principal">
+<main> <section class="bloque"> ... </main>
+<footer class="pie-pagina"> iconos HTML y CSS </footer>
+```
+- Un solo `<h1>` por página y jerarquía sin saltos (h2, h3…).
+- Etiquetas semánticas: `nav`, `main`, `section`, `article`, `figure` con `figcaption`, `abbr title` para siglas.
+- Nada de `style`, `<b>`, `<i>` decorativos, `<font>`, `<center>` ni `width`/`height` en imágenes: todo eso va al CSS.
+
+**Clases**
+- En minúsculas, con guiones y en castellano: `menu-principal`, no `menuPrincipal`.
+- Nombres por función, no por aspecto: `aviso`, no `caja-roja`.
+- Usad `id` solo para anclas (`#inicio`) y clases para dar estilo.
+
+**Clases comunes que usamos los dos**
+- Estructura: `cabecera-principal`, `menu-principal`, `contenido`, `bloque`, `barra-lateral`, `pie-pagina`
+- Contenido: `ficha` (tarjeta de un dispositivo), `destacado`, `aviso`, `dato-clave`, `figura`, `lista-caracteristicas`, `tabla-comparativa`, `enlace-externo`
+- Navegación: `actual` en el enlace de la página donde estás
+
+Si alguien necesita una clase nueva, se la dice al otro y se añade a esta lista, porque ambos tenéis que darle estilo en vuestro CSS.
+
+**Formato del código**
+- Sangría de 2 espacios, etiquetas y atributos en minúsculas, comillas dobles.
+- Un comentario `<!-- ... -->` antes de cada sección grande. La legibilidad del código puntúa.

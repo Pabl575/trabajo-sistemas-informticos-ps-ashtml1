@@ -1,0 +1,83 @@
+# Poner el mismo head a todos:
+
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Qué es un router, como funciona y que tipos existen.">
+        <meta name="keywords" content="router, hardware de redes, enrutamiento, switch, módem">
+        <meta name="author" content="Adriana Sainz Aguirre, Pablo Soto Hernández">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./comun.css">
+
+        <!-- Compatibilidad -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>*Nombre del apartado* | Trabajo SI</title>
+    </head>
+	
+# Poner los dos nav y el selector de idiomas en todos:
+    Además, en la pagina actual reemplazar el:
+    	href="./ ··· .html#es" por href="#es" y el
+    	href="./ ··· .html#en" por href="#en".
+
+		<!-- NAV EN ESPAÑOL -->
+		<nav class="español">
+			<h3>Índice:</h3>
+			<ul>
+				<li><a href="./index.html#es">Página principal</a></li>
+				<li><a href="./introducción.html#es">Introducción</a></li>
+				<li><a href="./modems.html#es">Módems</a></li>
+				<li><a href="./routers.html#es">Routers</a></li>
+				<li><a href="./switches.html#es">Switches</a></li>
+				<li><a href="./servidores.html#es">Servidores</a></li>
+				<li><a href="./topologias.html#es">Topologías</a></li>
+				<li><a href="./comparativa.html#es">Tabla comparativa</a></li>
+				<li><a href="./bibliografía.html#es">Bibliografía</a></li>
+			</ul>
+			<p>
+				Cambiar idioma a:
+				<a href="#es" class="selector_es">Español</a>
+				<a href="#en" class="selector_en">English</a>
+			</p>
+		</nav>
+
+		<!-- NAV EN INGLÉS -->
+		<nav class="inglés">
+			<h3>Index:</h3>
+			<ul>
+				<li><a href="./index.html#en">Home</a></li>
+				<li><a href="./introducción.html#en">Introduction</a></li>
+				<li><a href="./modems.html#en">Modems</a></li>
+				<li><a href="./routers.html#en">Routers</a></li>
+				<li><a href="./switches.html#en">Switches</a></li>
+				<li><a href="./servidores.html#en">Servers</a></li>
+				<li><a href="./topologias.html#en">Topologies</a></li>
+				<li><a href="./comparativa.html#en">Comparison table</a></li>
+				<li><a href="./bibliografía.html#en">Bibliography</a></li>
+			</ul>
+			<p>
+				Change language to:
+				<a href="#es" class="selector_es">Español</a>
+				<a href="#en" class="selector_en">English</a>
+			</p>
+		</nav>
+        <div id="es"></div>
+        <div id="en"></div>
+    
+    # poner el footer a todos los html:
+
+        <footer>
+            <p class="español">
+                Hecho por Pablo Soto y Adriana Sainz<br>
+                Última modificación: 9 de noviembre de 2026.
+            </p>
+            <p class="inglés">
+                Made by Pablo Soto and Adriana Sainz<br>
+                Last updated: November 15, 2026.
+            </p>
+            <img src="./img/mark-word-icon.png" alt="Valid HTML 5">
+        </footer>
+        

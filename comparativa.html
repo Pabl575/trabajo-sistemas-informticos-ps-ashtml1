@@ -1,0 +1,108 @@
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Qué es un router, como funciona y que tipos existen.">
+        <meta name="keywords" content="router, hardware de redes, enrutamiento, switch, módem">
+        <meta name="author" content="Adriana Sainz Aguirre, Pablo Soto Hernández">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./comun.css">
+
+        <!-- Compatibilidad -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Comparativa | Trabajo SI</title>
+    </head>
+    
+  <body>
+      
+      <header>
+        <h1>COMPARACIÓN DE LOS DISPOSITIVOS DE RED.</h1>
+      </header>
+     
+		<!-- NAV EN ESPAÑOL -->
+		<nav class="español">
+			<h3>Índice:</h3>
+			<ul>
+				<li><a href="./index.html#es">Página principal</a></li>
+				<li><a href="./introducción.html#es">Introducción</a></li>
+				<li><a href="./modems.html#es">Módems</a></li>
+				<li><a href="./routers.html#es">Routers</a></li>
+				<li><a href="./switches.html#es">Switches</a></li>
+				<li><a href="./servidores.html#es">Servidores</a></li>
+				<li><a href="./topologias.html#es">Topologías</a></li>
+				<li><a href="./comparativa.html#es">Tabla comparativa</a></li>
+				<li><a href="./bibliografía.html#es">Bibliografía</a></li>
+			</ul>
+			<p>
+				Cambiar idioma a:
+				<a href="#es" class="selector_es">Español</a>
+				<a href="#en" class="selector_en">English</a>
+			</p>
+		</nav>
+
+		<!-- NAV EN INGLÉS -->
+		<nav class="inglés">
+			<h3>Index:</h3>
+			<ul>
+				<li><a href="./index.html#en">Home</a></li>
+				<li><a href="./introducción.html#en">Introduction</a></li>
+				<li><a href="./modems.html#en">Modems</a></li>
+				<li><a href="./routers.html#en">Routers</a></li>
+				<li><a href="./switches.html#en">Switches</a></li>
+				<li><a href="./servidores.html#en">Servers</a></li>
+				<li><a href="./topologias.html#en">Topologies</a></li>
+				<li><a href="./comparativa.html#en">Comparison table</a></li>
+				<li><a href="./bibliografía.html#en">Bibliography</a></li>
+			</ul>
+			<p>
+				Change language to:
+				<a href="#es" class="selector_es">Español</a>
+				<a href="#en" class="selector_en">English</a>
+			</p>
+		</nav>
+        <div id="es"></div>
+        <div id="en"></div>
+      
+      <section>
+          <table>
+              <caption style="text-align:right">Tabla comparativa hardware de redes.</caption>
+              <COLGROUP id="dispositivo" span="1"></COLGROUP><COLGROUP id="funcion" span="1"></COLGROUP><COLGROUP id="nivel" span="1"></COLGROUP><COLGROUP id="alcance" span="1"></COLGROUP><COLGROUP id="uso" span="1"></COLGROUP>
+              <tr id= "celda1"> <td colspan=5>TABLA COMPARTIVA</td>
+              <tr> <th>DISPOSITIVO</th> <th>FUNCIÓN PRINCIPAL</th> <th>NIVEL DE RED</th> <th>ALCANCE DE RED</th> <th>USO</th></tr>
+              <tr> <th>MÓDEM</th> <td>Traducir señales físicas externas (fibra óptica, cable coaxial o línea telefónica) en datos digitales binarios y viceversa, permitiendo el acceso a internet.</td> 
+                  <td>Capa 1 (Física) y Capa 2 (Enlace de datos)</td> 
+                  <td>Frontera entre WAN (red del proveedor/ISP) y LAN (red local).</td> 
+                  <td>Hogares, oficinas y cualquier punto de entrada donde se recibe la conexión directa de un proveedor de servicios de internet (ISP).</td></tr>
+              <tr> <th>ROUTER</th> <td>Interconectar diferentes redes entre sí, asignar direcciones IP locales y calcular la ruta más eficiente para enviar paquetes de datos hacia su destino externo.</td> 
+                  <td>Capa 3 (Red)</td> 
+                  <td>Interconexión LAN – WAN (conecta redes locales con internet u otras redes).</td> 
+                  <td>Hogares (integrados con el módem y punto de acceso Wi-Fi), oficinas corporativas y nodos troncales de telecomunicaciones.</td></tr>
+              <tr> <th>SWITCH</th> <td>Conectar múltiples dispositivos dentro de una misma red local, dirigiendo los datos exclusivamente al equipo destinatario mediante su dirección MAC.</td> 
+                  <td>Capa 2 (Enlace de datos) (los modelos avanzados operan también en Capa 3)</td> 
+                  <td>LAN (Red de Área Local).</td> 
+                  <td>Oficinas, centros educativos, hospitales y centros de datos donde es necesario cablear decenas o cientos de ordenadores, impresoras o puntos de acceso.</td></tr>
+              <tr> <th>SERVIDOR</th> <td>Almacenar, procesar y gestionar grandes volúmenes de información, aplicaciones o servicios para responder continuamente a las peticiones de los clientes.</td> 
+                  <td>Capa 7 (Aplicación) (aunque interactúa con toda la pila de red)</td> 
+                  <td>LAN (intranet) o WAN (internet global).</td> 
+                  <td>Centros de datos (Data Centers), infraestructuras en la nube, salas de servidores empresariales y entornos de alojamiento web.</td></tr>
+          </table>
+      </section>
+      
+      <footer>
+          <a class="español" href="./index.html">Volver al índice</a>
+          <p class="español">
+              Hecho por Pablo Soto y Adriana Sainz<br>
+              Última modificación: 9 de noviembre de 2026.
+          <p/>
+          <a class="inglés" href="./index.html">Return to index</a>
+          <p class="inglés">
+              Made by Pablo Soto and Adriana Sainz<br>
+              Last updated: November 15, 2026.
+          <p/>
+          <img src="./img/mark-word-icon.png" alt="Valid HTML 5">
+      </footer>
+      
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "framework": "node",
+  "start_command": "node app.js",
+  "docker_image": "node:slim",
+  "striqr_project_load": "Blank",
+  "auto_start": "false",
+  "warningmessage": false,
+  "message": ""
+}

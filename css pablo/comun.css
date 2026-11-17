@@ -1,0 +1,92 @@
+/* ESTRUCTURA Y POSICIONES */
+
+	* {
+    	box-sizing: border-box;
+	}
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    body {
+        background-attachment: fixed;
+        box-sizing: border-box;
+    }
+	header {
+        position: sticky;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        
+        padding: 0.8rem;
+        padding-bottom: 0.01rem;
+	}
+	body {
+    	position: relative;
+	}
+	
+	footer {
+        position: fixed;
+        bottom: 0%;
+        left 0rem;
+        width: 100%;
+        
+        padding-left: 0.5rem;
+	}
+
+/* DISEÑO, COLORES, FONDOS, BORDES, etc. */
+	
+	body{
+		background-image: "./img/background_p.png";
+		background-size: 100%;
+	} 
+	header, nav, section, footer {
+        border: 0;
+    }
+	header {
+        background-color: white; /* o background-image: "./*imagen*.jpg"; */
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        font-size: 0.6rem;
+	}
+	header h1 {
+        margin: 0;
+		text-transform: uppercase;    
+	}
+	
+    footer {
+        background-color:rgb(160,80,20,0.2);
+    }
+
+/* CONTROL DE IMÁGENES */
+	img{
+		/**/
+	}
+	footer img {
+		width: 2rem;
+    }
+
+/* CONTROL DE IDIOMA - Accesibilidad español/inglés */
+
+    /* Por defecto: español */
+        .inglés {
+            display: none;
+        }
+
+    /* Si se selecciona inglés */
+        html:has(#en:target) .español {
+            display: none;
+        }
+
+        html:has(#en:target) .inglés {
+            display: revert;
+        }
+
+    /* Si se selecciona español */
+        html:has(#es:target) .inglés {
+            display: none;
+        }
+
+        html:has(#es:target) .español {
+            display: revert;
+        }

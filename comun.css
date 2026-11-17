@@ -1,0 +1,24 @@
+/* CONTROL DE IDIOMA - Accesibilidad español/inglés */
+
+/* Por defecto: español */
+.inglés {
+    display: none;
+}
+
+/* Si se selecciona inglés */
+html:has(#en:target) .español {
+    display: none;
+}
+
+html:has(#en:target) .inglés {
+    display: revert;
+}
+
+/* Si se selecciona español */
+html:has(#es:target) .inglés {
+    display: none;
+}
+
+html:has(#es:target) .español {
+    display: revert;
+}
